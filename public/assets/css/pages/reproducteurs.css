@@ -1,0 +1,1210 @@
+/* =========================
+   HERO
+========================= */
+
+.breeders-hero {
+    position: relative;
+    padding: 76px 0 64px;
+    overflow: hidden;
+}
+
+.breeders-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 12% 16%, rgba(245, 184, 207, 0.28), transparent 30%),
+        radial-gradient(circle at 88% 20%, rgba(201, 167, 221, 0.26), transparent 32%);
+    pointer-events: none;
+}
+
+.breeders-hero__inner {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 0.9fr);
+    gap: 46px;
+    align-items: center;
+}
+
+.breeders-hero__content {
+    min-width: 0;
+}
+
+.breeders-hero__content h1 {
+    max-width: 840px;
+    margin-top: 18px;
+    font-family: var(--font-title);
+    font-size: clamp(2.8rem, 5.8vw, 5.9rem);
+    line-height: 0.9;
+    letter-spacing: -0.065em;
+    color: var(--be-text);
+}
+
+.breeders-hero__content p {
+    max-width: 660px;
+    margin-top: 24px;
+    color: var(--be-muted);
+    font-size: 1.05rem;
+    line-height: 1.85;
+}
+
+.breeders-hero__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.breeders-hero__badges span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 42px;
+    padding: 0 16px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.74);
+    border: 1px solid rgba(135, 98, 160, 0.12);
+    color: var(--be-lavender-dark);
+    font-weight: 850;
+}
+
+.breeders-hero__card {
+    position: relative;
+    min-height: 560px;
+    overflow: hidden;
+    border-radius: 46px;
+    background: var(--be-cream);
+    border: 1px solid rgba(255, 255, 255, 0.86);
+    box-shadow: var(--be-shadow-card);
+}
+
+.breeders-hero__card img {
+    width: 100%;
+    height: 100%;
+    min-height: 560px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.breeders-hero__note {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px;
+    border-radius: 26px;
+    background: rgba(255, 255, 255, 0.84);
+    border: 1px solid rgba(135, 98, 160, 0.12);
+    box-shadow: 0 18px 38px rgba(135, 98, 160, 0.14);
+    backdrop-filter: blur(10px);
+}
+
+.breeders-hero__note span {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: var(--be-pink-soft);
+    color: var(--be-lavender-dark);
+    font-size: 1.25rem;
+}
+
+.breeders-hero__note p {
+    color: var(--be-muted);
+    line-height: 1.55;
+    font-weight: 750;
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.breeders-intro {
+    padding: 0 0 82px;
+}
+
+.breeders-intro__card {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: clamp(30px, 5vw, 54px);
+    text-align: center;
+    border-radius: 42px;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.86), transparent 28%),
+        linear-gradient(135deg, rgba(255, 227, 238, 0.72), rgba(248, 236, 255, 0.9));
+    border: 1px solid rgba(255, 255, 255, 0.88);
+    box-shadow: var(--be-shadow-card);
+}
+
+.breeders-intro__icon {
+    display: inline-flex;
+    width: 58px;
+    height: 58px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.78);
+    color: var(--be-gold);
+    font-size: 1.8rem;
+}
+
+.breeders-intro__card h2,
+.health-section__content h2,
+.breeders-final__card h2 {
+    margin-top: 18px;
+    font-family: var(--font-title);
+    font-size: clamp(2.3rem, 5vw, 4.8rem);
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+    color: var(--be-text);
+}
+
+.breeders-intro__card p,
+.health-section__content > p,
+.breeders-final__card p {
+    max-width: 760px;
+    margin: 18px auto 0;
+    color: var(--be-muted);
+    font-size: 1.03rem;
+    line-height: 1.85;
+}
+
+/* =========================
+   COLLECTIONS
+========================= */
+
+.breeders-collection {
+    padding: 0 0 96px;
+}
+
+.breeders-collection--females {
+    padding-top: 8px;
+}
+
+.collection-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(320px, 0.75fr);
+    gap: 34px;
+    align-items: end;
+    margin-bottom: 34px;
+}
+
+.collection-heading h2 {
+    margin-top: 18px;
+    font-family: var(--font-title);
+    font-size: clamp(2.6rem, 5.4vw, 5.4rem);
+    line-height: 0.9;
+    letter-spacing: -0.065em;
+    color: var(--be-text);
+}
+
+.collection-heading p {
+    color: var(--be-muted);
+    font-size: 1.02rem;
+    line-height: 1.85;
+}
+
+/* =========================
+   FEMELLES HIGHLIGHT
+========================= */
+
+.females-highlight {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.75fr);
+    gap: 22px;
+    align-items: stretch;
+    margin-bottom: 28px;
+}
+
+.females-highlight__content {
+    padding: clamp(28px, 4vw, 42px);
+    border-radius: 38px;
+    background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.9), transparent 30%),
+        linear-gradient(135deg, rgba(255, 227, 238, 0.78), rgba(248, 236, 255, 0.9));
+    border: 1px solid rgba(255, 255, 255, 0.88);
+    box-shadow: var(--be-shadow-soft);
+}
+
+.females-highlight__content > span {
+    display: inline-flex;
+    width: 58px;
+    height: 58px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.74);
+    color: var(--be-gold);
+    font-size: 1.8rem;
+}
+
+.females-highlight__content h3 {
+    max-width: 740px;
+    margin-bottom: 16px;
+    font-family: var(--font-title);
+    font-size: clamp(2rem, 4vw, 4rem);
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+    color: var(--be-text);
+}
+
+.females-highlight__content p {
+    max-width: 760px;
+    color: var(--be-muted);
+    line-height: 1.85;
+}
+
+.females-highlight__stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}
+
+.females-highlight__stats div {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 22px;
+    border-radius: 32px;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.86);
+    box-shadow: var(--be-shadow-soft);
+}
+
+.females-highlight__stats strong {
+    font-family: var(--font-title);
+    font-size: 3.3rem;
+    line-height: 1;
+    color: var(--be-lavender-dark);
+}
+
+.females-highlight__stats span {
+    margin-top: 4px;
+    color: var(--be-muted);
+    font-weight: 850;
+}
+
+/* =========================
+   REPRO SHOWCASE
+========================= */
+
+.repro-showcase {
+    position: relative;
+    overflow: hidden;
+    padding: 22px;
+    border-radius: 46px;
+    background:
+        radial-gradient(circle at 12% 18%, rgba(255, 255, 255, 0.92), transparent 28%),
+        radial-gradient(circle at 88% 8%, rgba(242, 204, 127, 0.18), transparent 26%),
+        linear-gradient(135deg, rgba(255, 227, 238, 0.58), rgba(248, 236, 255, 0.9));
+    border: 1px solid rgba(255, 255, 255, 0.88);
+    box-shadow: var(--be-shadow-card);
+}
+
+.repro-showcase__stage {
+    position: relative;
+}
+
+.repro-panel {
+    display: none;
+    grid-template-columns: minmax(0, 1fr) minmax(390px, 0.9fr);
+    gap: 22px;
+    align-items: stretch;
+}
+
+.repro-panel.is-active {
+    display: grid;
+    animation: reproFade 0.42s ease both;
+}
+
+@keyframes reproFade {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.repro-panel__image {
+    position: relative;
+    overflow: hidden;
+    min-height: 520px;
+    border-radius: 36px;
+    background:
+        radial-gradient(circle at 20% 18%, rgba(255, 255, 255, 0.72), transparent 30%),
+        linear-gradient(135deg, var(--be-pink-soft), var(--be-lavender-soft));
+    box-shadow: 0 22px 60px rgba(135, 98, 160, 0.18);
+}
+
+.repro-panel__image::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 34%;
+    background: linear-gradient(to top, rgba(89, 68, 95, 0.32), transparent);
+    pointer-events: none;
+}
+
+.repro-panel__image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.repro-panel__gender {
+    position: absolute;
+    z-index: 2;
+    top: 22px;
+    left: 22px;
+    display: inline-flex;
+    align-items: center;
+    min-height: 38px;
+    padding: 0 16px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.88);
+    color: var(--be-lavender-dark);
+    font-size: 0.82rem;
+    font-weight: 900;
+    box-shadow: 0 12px 26px rgba(135, 98, 160, 0.14);
+    backdrop-filter: blur(10px);
+}
+
+.repro-panel__content {
+    position: relative;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(30px, 4vw, 48px);
+    border-radius: 36px;
+    background: rgba(255, 255, 255, 0.68);
+    border: 1px solid rgba(255, 255, 255, 0.78);
+    overflow: hidden;
+}
+
+.repro-panel__content::before {
+    content: "✦";
+    position: absolute;
+    top: 30px;
+    right: 34px;
+    color: var(--be-gold);
+    font-size: 2.4rem;
+    opacity: 0.38;
+}
+
+.repro-panel__content::after {
+    content: "☾";
+    position: absolute;
+    right: 34px;
+    bottom: 18px;
+    color: var(--be-gold);
+    font-size: 5.6rem;
+    opacity: 0.12;
+}
+
+.repro-panel__origin {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    min-height: 36px;
+    margin-bottom: 20px;
+    padding: 0 14px;
+    border-radius: 999px;
+    background: rgba(255, 227, 238, 0.74);
+    color: var(--be-lavender-dark);
+    font-size: 0.82rem;
+    font-weight: 900;
+}
+
+.repro-panel__content h3 {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    font-family: var(--font-title);
+    font-size: clamp(2.7rem, 4.55vw, 5rem);
+    line-height: 0.88;
+    letter-spacing: -0.07em;
+    color: var(--be-text);
+}
+
+.repro-panel__content p {
+    position: relative;
+    z-index: 1;
+    max-width: 620px;
+    margin-top: 20px;
+    color: var(--be-muted);
+    font-size: 1.03rem;
+    line-height: 1.75;
+}
+
+.repro-panel__details {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 26px;
+}
+
+.repro-panel__details div {
+    padding: 16px 18px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(135, 98, 160, 0.12);
+}
+
+.repro-panel__details span {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--be-muted);
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.repro-panel__details strong {
+    color: var(--be-text);
+    font-size: 1.02rem;
+    line-height: 1.45;
+}
+
+/* =========================
+   REPRO NAVIGATION
+========================= */
+
+.repro-showcase__bottom {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 52px minmax(0, 1fr) 52px;
+    gap: 14px;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.repro-showcase__arrow {
+    width: 52px;
+    height: 52px;
+    border: 0;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.84);
+    border: 1px solid rgba(135, 98, 160, 0.12);
+    color: var(--be-lavender-dark);
+    font-size: 1.15rem;
+    font-weight: 900;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.repro-showcase__arrow:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 14px 26px rgba(135, 98, 160, 0.14);
+}
+
+.repro-thumbs {
+    min-width: 0;
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding: 0 4px 8px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(135, 98, 160, 0.35) transparent;
+}
+
+.repro-thumbs::-webkit-scrollbar {
+    height: 8px;
+}
+
+.repro-thumbs::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.repro-thumbs::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: rgba(135, 98, 160, 0.28);
+}
+
+.repro-thumb {
+    flex: 0 0 190px;
+    display: grid;
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 10px;
+    align-items: center;
+    min-height: 72px;
+    padding: 8px 12px 8px 8px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.66);
+    border: 1px solid rgba(135, 98, 160, 0.1);
+    color: var(--be-text);
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.repro-thumb:hover,
+.repro-thumb.is-active {
+    background: rgba(255, 255, 255, 0.94);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(135, 98, 160, 0.14);
+}
+
+.repro-thumb.is-active {
+    border-color: rgba(135, 98, 160, 0.28);
+}
+
+.repro-thumb img {
+    width: 56px;
+    height: 56px;
+    border-radius: 18px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.repro-thumb span {
+    overflow: hidden;
+    display: -webkit-box;
+    color: var(--be-text);
+    font-size: 0.84rem;
+    font-weight: 900;
+    line-height: 1.25;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.breeders-collection--males .repro-thumbs {
+    justify-content: center;
+}
+
+.breeders-collection--males .repro-thumb {
+    flex-basis: 220px;
+}
+
+.breeders-collection--females .repro-thumbs {
+    justify-content: flex-start;
+}
+
+/* =========================
+   SANTÉ / MARIAGES
+========================= */
+
+.health-section {
+    padding: 0 0 92px;
+}
+
+.health-section__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 0.92fr);
+    gap: 46px;
+    align-items: center;
+}
+
+.health-list {
+    display: grid;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.health-list div {
+    padding: 18px 20px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(135, 98, 160, 0.12);
+}
+
+.health-list strong {
+    display: block;
+    margin-bottom: 6px;
+    font-family: var(--font-title);
+    font-size: 1.25rem;
+    color: var(--be-text);
+}
+
+.health-list span {
+    display: block;
+    color: var(--be-muted);
+    line-height: 1.65;
+}
+
+.health-section__visual {
+    display: grid;
+    gap: 18px;
+}
+
+.health-card {
+    padding: 30px;
+    border-radius: 34px;
+    background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.88), transparent 30%),
+        linear-gradient(135deg, rgba(255, 227, 238, 0.76), rgba(248, 236, 255, 0.9));
+    border: 1px solid rgba(255, 255, 255, 0.88);
+    box-shadow: var(--be-shadow-soft);
+}
+
+.health-card span {
+    display: inline-flex;
+    width: 54px;
+    height: 54px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.78);
+    color: var(--be-gold);
+    font-size: 1.7rem;
+}
+
+.health-card h3 {
+    margin-bottom: 10px;
+    font-family: var(--font-title);
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: -0.045em;
+    color: var(--be-text);
+}
+
+.health-card p {
+    color: var(--be-muted);
+    line-height: 1.75;
+}
+
+.health-picture {
+    overflow: hidden;
+    min-height: 340px;
+    border-radius: 34px;
+    background: var(--be-cream);
+    box-shadow: var(--be-shadow-card);
+}
+
+.health-picture img {
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* =========================
+   FINAL CTA
+========================= */
+
+.breeders-final {
+    padding: 0 0 26px;
+}
+
+.breeders-final__card {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(34px, 6vw, 68px);
+    text-align: center;
+    border-radius: 46px;
+    background:
+        radial-gradient(circle at 20% 18%, rgba(255, 255, 255, 0.88), transparent 28%),
+        linear-gradient(135deg, var(--be-pink-soft), var(--be-lavender-soft));
+    border: 1px solid rgba(255, 255, 255, 0.88);
+    box-shadow: var(--be-shadow-card);
+}
+
+.breeders-final__card::before {
+    content: "✦";
+    position: absolute;
+    top: 34px;
+    left: 42px;
+    color: var(--be-gold);
+    font-size: 3rem;
+    opacity: 0.55;
+}
+
+.breeders-final__card::after {
+    content: "☾";
+    position: absolute;
+    right: 48px;
+    bottom: 28px;
+    color: var(--be-gold);
+    font-size: 7rem;
+    opacity: 0.22;
+}
+
+.breeders-final__icon {
+    display: inline-flex;
+    width: 62px;
+    height: 62px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.74);
+    color: var(--be-lavender-dark);
+    font-size: 1.8rem;
+}
+
+.breeders-final__card h2 {
+    max-width: 860px;
+    margin-inline: auto;
+    margin-top: 18px;
+    font-family: var(--font-title);
+    font-size: clamp(2.3rem, 5vw, 4.8rem);
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+    color: var(--be-text);
+}
+
+.breeders-final__card p {
+    max-width: 760px;
+    margin-inline: auto;
+    margin-top: 18px;
+    color: var(--be-muted);
+    font-size: 1.03rem;
+    line-height: 1.85;
+}
+
+.breeders-final__actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+[data-animate] {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+[data-animate].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================
+   RESPONSIVE TABLETTE
+========================= */
+
+@media (max-width: 1100px) {
+    .breeders-hero__inner,
+    .collection-heading,
+    .females-highlight,
+    .health-section__inner {
+        grid-template-columns: 1fr;
+    }
+
+    .repro-panel {
+        grid-template-columns: 1fr;
+    }
+
+    .repro-panel__image {
+        min-height: 520px;
+    }
+
+    .females-highlight__stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .breeders-collection--males .repro-thumbs {
+        justify-content: flex-start;
+    }
+
+    .breeders-collection--males .repro-thumb {
+        flex-basis: 190px;
+    }
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media (max-width: 760px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .breeders-hero {
+        padding: 44px 0 52px;
+    }
+
+    .breeders-hero__inner {
+        gap: 30px;
+    }
+
+    .breeders-hero__content h1 {
+        max-width: 100%;
+        font-size: clamp(2.05rem, 11vw, 3rem);
+        line-height: 0.98;
+        letter-spacing: -0.04em;
+        overflow-wrap: break-word;
+    }
+
+    .breeders-hero__content p {
+        max-width: 100%;
+        margin-top: 20px;
+        font-size: 0.98rem;
+        line-height: 1.78;
+    }
+
+    .breeders-hero__badges {
+        gap: 8px;
+        margin-top: 24px;
+    }
+
+    .breeders-hero__badges span {
+        min-height: 38px;
+        padding: 0 13px;
+        font-size: 0.82rem;
+    }
+
+    .breeders-hero__card {
+        min-height: auto;
+        border-radius: 30px;
+    }
+
+    .breeders-hero__card img {
+        height: 340px;
+        min-height: 340px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .breeders-hero__note {
+        position: relative;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        margin: 14px;
+        align-items: flex-start;
+        border-radius: 22px;
+    }
+
+    .breeders-intro {
+        padding-bottom: 58px;
+    }
+
+    .breeders-intro__card {
+        padding: 28px 22px;
+        border-radius: 30px;
+        text-align: left;
+    }
+
+    .breeders-intro__icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 20px;
+    }
+
+    .breeders-intro__card h2 {
+        font-size: clamp(2rem, 10vw, 3.1rem);
+        line-height: 0.98;
+        letter-spacing: -0.045em;
+    }
+
+    .breeders-intro__card p {
+        margin-inline: 0;
+        font-size: 0.97rem;
+    }
+
+    .breeders-collection {
+        padding-bottom: 60px;
+    }
+
+    .collection-heading {
+        gap: 18px;
+        margin-bottom: 24px;
+    }
+
+    .collection-heading h2 {
+        font-size: clamp(2.1rem, 11vw, 3.4rem);
+        line-height: 0.96;
+        letter-spacing: -0.05em;
+    }
+
+    .collection-heading p {
+        font-size: 0.97rem;
+        line-height: 1.75;
+    }
+
+    .females-highlight {
+        gap: 14px;
+        margin-bottom: 22px;
+    }
+
+    .females-highlight__content {
+        padding: 28px 22px;
+        border-radius: 30px;
+    }
+
+    .females-highlight__content > span {
+        width: 52px;
+        height: 52px;
+        border-radius: 20px;
+    }
+
+    .females-highlight__content h3 {
+        font-size: clamp(2rem, 10vw, 3.1rem);
+        line-height: 0.98;
+        letter-spacing: -0.045em;
+    }
+
+    .females-highlight__content p {
+        font-size: 0.97rem;
+        line-height: 1.75;
+    }
+
+    .females-highlight__stats {
+        grid-template-columns: 1fr;
+    }
+
+    .females-highlight__stats div {
+        padding: 18px;
+        border-radius: 26px;
+    }
+
+    .females-highlight__stats strong {
+        font-size: 2.7rem;
+    }
+
+    .repro-showcase {
+        padding: 14px;
+        border-radius: 32px;
+    }
+
+    .repro-panel {
+        gap: 14px;
+    }
+
+    .repro-panel__image {
+        min-height: 390px;
+        border-radius: 26px;
+    }
+
+    .repro-panel__image img {
+        object-position: center top;
+    }
+
+    .repro-panel__gender {
+        top: 16px;
+        left: 16px;
+        min-height: 34px;
+        padding: 0 13px;
+        font-size: 0.78rem;
+    }
+
+    .repro-panel__content {
+        padding: 26px 20px;
+        border-radius: 26px;
+        justify-content: flex-start;
+    }
+
+    .repro-panel__content::before {
+        top: 18px;
+        right: 20px;
+        font-size: 2rem;
+        opacity: 0.34;
+    }
+
+    .repro-panel__content::after {
+        display: none;
+    }
+
+    .repro-panel__origin {
+        min-height: 34px;
+        margin-bottom: 18px;
+        padding: 0 13px;
+        font-size: 0.78rem;
+    }
+
+    .repro-panel__content h3 {
+        max-width: 100%;
+        font-size: clamp(2.05rem, 10.5vw, 3.25rem);
+        line-height: 0.94;
+        letter-spacing: -0.05em;
+    }
+
+    .repro-panel__content p {
+        margin-top: 18px;
+        font-size: 0.96rem;
+        line-height: 1.72;
+    }
+
+    .repro-panel__details {
+        gap: 10px;
+        margin-top: 22px;
+    }
+
+    .repro-panel__details div {
+        padding: 15px 16px;
+        border-radius: 20px;
+    }
+
+    .repro-panel__details strong {
+        font-size: 0.96rem;
+    }
+
+    .repro-showcase__bottom {
+        grid-template-columns: 42px minmax(0, 1fr) 42px;
+        gap: 8px;
+        margin-top: 16px;
+    }
+
+    .repro-showcase__arrow {
+        width: 42px;
+        height: 42px;
+        border-radius: 16px;
+        font-size: 1rem;
+    }
+
+    .repro-thumbs {
+        gap: 10px;
+        padding: 4px 2px 10px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .breeders-collection--males .repro-thumbs,
+    .breeders-collection--females .repro-thumbs {
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+
+    .breeders-collection--males .repro-thumb,
+    .breeders-collection--females .repro-thumb,
+    .repro-thumb {
+        flex: 0 0 116px;
+        scroll-snap-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        min-height: 132px;
+        padding: 10px;
+        border-radius: 24px;
+        text-align: center;
+    }
+
+    .repro-thumb img {
+        width: 66px;
+        height: 66px;
+        margin: 0 auto;
+        border-radius: 22px;
+    }
+
+    .repro-thumb span {
+        font-size: 0.76rem;
+        line-height: 1.18;
+        text-align: center;
+        -webkit-line-clamp: 2;
+    }
+
+    .health-section {
+        padding-bottom: 60px;
+    }
+
+    .health-section__inner {
+        gap: 26px;
+    }
+
+    .health-section__content h2 {
+        font-size: clamp(2.1rem, 10vw, 3.2rem);
+        line-height: 0.98;
+        letter-spacing: -0.045em;
+    }
+
+    .health-section__content > p {
+        margin-inline: 0;
+        font-size: 0.97rem;
+    }
+
+    .health-list div {
+        padding: 16px;
+        border-radius: 20px;
+    }
+
+    .health-card {
+        padding: 24px 20px;
+        border-radius: 28px;
+    }
+
+    .health-picture {
+        min-height: 300px;
+        border-radius: 28px;
+    }
+
+    .health-picture img {
+        min-height: 300px;
+    }
+
+    .breeders-final__card {
+        padding: 34px 22px;
+        border-radius: 32px;
+    }
+
+    .breeders-final__card h2 {
+        font-size: clamp(2.1rem, 10vw, 3.2rem);
+        line-height: 0.98;
+        letter-spacing: -0.045em;
+    }
+
+    .breeders-final__card p {
+        font-size: 0.97rem;
+    }
+
+    .breeders-final__actions {
+        flex-direction: column;
+    }
+
+    .breeders-final__actions .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 430px) {
+    .breeders-hero__content h1 {
+        font-size: clamp(1.95rem, 10.5vw, 2.7rem);
+    }
+
+    .repro-panel__image {
+        min-height: 340px;
+    }
+
+    .repro-panel__content h3 {
+        font-size: clamp(1.95rem, 10vw, 3rem);
+    }
+
+    .repro-panel__details div {
+        padding: 15px;
+    }
+
+    .repro-thumb {
+        flex-basis: 108px;
+        min-height: 126px;
+    }
+
+    .repro-thumb img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .repro-thumb span {
+        font-size: 0.72rem;
+    }
+}
