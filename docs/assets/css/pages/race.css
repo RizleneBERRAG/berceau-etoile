@@ -1,0 +1,562 @@
+.race-hero {
+    position: relative;
+    padding: 76px 0 70px;
+    overflow: hidden;
+}
+
+.race-hero__decor {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.38;
+}
+
+.race-hero__decor--star {
+    top: 120px;
+    left: 7%;
+    color: var(--be-gold);
+    font-size: 3.5rem;
+}
+
+.race-hero__decor--moon {
+    right: 8%;
+    bottom: 30px;
+    color: var(--be-gold);
+    font-size: 7rem;
+}
+
+.race-hero__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 0.92fr);
+    gap: 46px;
+    align-items: center;
+}
+
+.race-hero__content h1 {
+    max-width: 820px;
+    margin-top: 18px;
+    font-family: var(--font-title);
+    font-size: clamp(2.8rem, 5.8vw, 5.8rem);
+    line-height: 0.92;
+    letter-spacing: -0.065em;
+    color: var(--be-text);
+}
+
+.race-hero__content p {
+    max-width: 660px;
+    margin-top: 24px;
+    color: var(--be-muted);
+    font-size: 1.05rem;
+    line-height: 1.85;
+}
+
+.race-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 32px;
+}
+
+.race-hero__card {
+    position: relative;
+    overflow: hidden;
+    min-height: 560px;
+    border-radius: 46px;
+    background: var(--be-cream);
+    border: 1px solid rgba(255, 255, 255, 0.86);
+    box-shadow: var(--be-shadow-card);
+}
+
+.race-hero__card img {
+    width: 100%;
+    height: 100%;
+    min-height: 560px;
+    object-fit: cover;
+}
+
+.race-hero__note {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px;
+    border-radius: 26px;
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid rgba(135, 98, 160, 0.12);
+    box-shadow: 0 18px 38px rgba(135, 98, 160, 0.14);
+    backdrop-filter: blur(10px);
+}
+
+.race-hero__note span {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: var(--be-pink-soft);
+    color: var(--be-lavender-dark);
+    font-size: 1.25rem;
+}
+
+.race-hero__note p {
+    color: var(--be-muted);
+    line-height: 1.55;
+    font-weight: 750;
+}
+
+/* =========================
+   COMMON HEADINGS
+========================= */
+
+.section-heading {
+    max-width: 780px;
+    margin-bottom: 38px;
+}
+
+.section-heading--center {
+    margin-inline: auto;
+    text-align: center;
+}
+
+.section-heading h2,
+.race-life__content h2,
+.race-beauty__content h2,
+.race-final__card h2 {
+    margin-top: 18px;
+    font-family: var(--font-title);
+    font-size: clamp(2.3rem, 5vw, 4.8rem);
+    line-height: 0.95;
+    letter-spacing: -0.06em;
+    color: var(--be-text);
+}
+
+.section-heading p,
+.race-life__content > p,
+.race-beauty__content p,
+.race-final__card p {
+    margin-top: 18px;
+    color: var(--be-muted);
+    font-size: 1.03rem;
+    line-height: 1.85;
+}
+
+/* =========================
+   TEMPERAMENT
+========================= */
+
+.race-temperament {
+    padding: 44px 0 86px;
+}
+
+.temperament-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.temperament-card {
+    position: relative;
+    min-height: 290px;
+    padding: 28px;
+    border-radius: 32px;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.86);
+    box-shadow: var(--be-shadow-soft);
+}
+
+.temperament-card::after {
+    content: "✦";
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    color: var(--be-gold);
+    opacity: 0.45;
+}
+
+.temperament-card span {
+    display: inline-flex;
+    width: 46px;
+    height: 46px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    border-radius: 17px;
+    background: linear-gradient(135deg, var(--be-pink-soft), var(--be-lavender-soft));
+    color: var(--be-lavender-dark);
+    font-weight: 900;
+}
+
+.temperament-card h3 {
+    margin-bottom: 12px;
+    font-family: var(--font-title);
+    font-size: 1.7rem;
+    letter-spacing: -0.045em;
+    color: var(--be-text);
+}
+
+.temperament-card p {
+    color: var(--be-muted);
+    line-height: 1.72;
+}
+
+/* =========================
+   LIFE
+========================= */
+
+.race-life {
+    padding: 0 0 92px;
+}
+
+.race-life__inner {
+    display: grid;
+    grid-template-columns: minmax(360px, 0.95fr) minmax(0, 1.05fr);
+    gap: 54px;
+    align-items: center;
+}
+
+.race-life__visual {
+    position: relative;
+    min-height: 600px;
+}
+
+.life-picture {
+    position: absolute;
+    overflow: hidden;
+    background: var(--be-cream);
+    border: 12px solid rgba(255, 255, 255, 0.76);
+    box-shadow: var(--be-shadow-card);
+}
+
+.life-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.life-picture--main {
+    left: 0;
+    top: 0;
+    width: 74%;
+    height: 500px;
+    border-radius: 42px;
+}
+
+.life-picture--small {
+    right: 0;
+    bottom: 0;
+    width: 48%;
+    height: 300px;
+    border-radius: 34px;
+}
+
+.race-life__list {
+    display: grid;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.race-life__list div {
+    padding: 18px 20px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(135, 98, 160, 0.12);
+}
+
+.race-life__list strong {
+    display: block;
+    margin-bottom: 6px;
+    font-family: var(--font-title);
+    font-size: 1.25rem;
+    color: var(--be-text);
+}
+
+.race-life__list span {
+    color: var(--be-muted);
+    line-height: 1.65;
+}
+
+/* =========================
+   BEAUTY
+========================= */
+
+.race-beauty {
+    padding: 0 0 92px;
+}
+
+.race-beauty__card {
+    display: grid;
+    grid-template-columns: minmax(0, 0.92fr) minmax(360px, 1.08fr);
+    gap: 36px;
+    align-items: center;
+    padding: clamp(28px, 5vw, 58px);
+    border-radius: 46px;
+    background:
+        radial-gradient(circle at 18% 18%, rgba(255,255,255,0.82), transparent 30%),
+        linear-gradient(135deg, rgba(255, 227, 238, 0.78), rgba(248, 236, 255, 0.92));
+    border: 1px solid rgba(255, 255, 255, 0.88);
+    box-shadow: var(--be-shadow-card);
+}
+
+.race-beauty__features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.race-beauty__features article {
+    min-height: 260px;
+    padding: 24px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.68);
+    border: 1px solid rgba(135, 98, 160, 0.12);
+}
+
+.race-beauty__features span {
+    display: inline-flex;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 18px;
+    background: var(--be-pink-soft);
+    color: var(--be-lavender-dark);
+    font-size: 1.2rem;
+}
+
+.race-beauty__features h3 {
+    margin-bottom: 10px;
+    font-family: var(--font-title);
+    font-size: 1.55rem;
+    letter-spacing: -0.04em;
+    color: var(--be-text);
+}
+
+.race-beauty__features p {
+    color: var(--be-muted);
+    line-height: 1.72;
+}
+
+/* =========================
+   NEEDS
+========================= */
+
+.race-needs {
+    padding: 0 0 92px;
+}
+
+.needs-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.need-card {
+    padding: 28px;
+    border-radius: 32px;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.86);
+    box-shadow: var(--be-shadow-soft);
+}
+
+.need-card--large {
+    grid-column: span 2;
+    background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.9), transparent 30%),
+        linear-gradient(135deg, rgba(255, 227, 238, 0.8), rgba(248, 236, 255, 0.88));
+}
+
+.need-card h3 {
+    margin-bottom: 12px;
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    letter-spacing: -0.04em;
+    color: var(--be-text);
+}
+
+.need-card p {
+    color: var(--be-muted);
+    line-height: 1.75;
+}
+
+/* =========================
+   FINAL
+========================= */
+
+.race-final {
+    padding: 0 0 26px;
+}
+
+.race-final__card {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(34px, 6vw, 68px);
+    text-align: center;
+    border-radius: 46px;
+    background:
+        radial-gradient(circle at 20% 18%, rgba(255, 255, 255, 0.88), transparent 28%),
+        linear-gradient(135deg, var(--be-pink-soft), var(--be-lavender-soft));
+    border: 1px solid rgba(255, 255, 255, 0.88);
+    box-shadow: var(--be-shadow-card);
+}
+
+.race-final__card::before {
+    content: "✦";
+    position: absolute;
+    top: 34px;
+    left: 42px;
+    color: var(--be-gold);
+    font-size: 3rem;
+    opacity: 0.55;
+}
+
+.race-final__card::after {
+    content: "☾";
+    position: absolute;
+    right: 48px;
+    bottom: 28px;
+    color: var(--be-gold);
+    font-size: 7rem;
+    opacity: 0.22;
+}
+
+.race-final__icon {
+    display: inline-flex;
+    width: 62px;
+    height: 62px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.74);
+    color: var(--be-lavender-dark);
+    font-size: 1.8rem;
+}
+
+.race-final__card h2 {
+    max-width: 860px;
+    margin-inline: auto;
+}
+
+.race-final__card p {
+    max-width: 720px;
+    margin-inline: auto;
+}
+
+.race-final__actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+[data-animate] {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+[data-animate].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1120px) {
+    .race-hero__inner,
+    .race-life__inner,
+    .race-beauty__card {
+        grid-template-columns: 1fr;
+    }
+
+    .temperament-grid,
+    .needs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .race-beauty__features {
+        grid-template-columns: 1fr;
+    }
+
+    .race-life__visual {
+        min-height: 520px;
+    }
+}
+
+@media (max-width: 760px) {
+    .race-hero,
+    .race-temperament,
+    .race-life,
+    .race-beauty,
+    .race-needs {
+        padding-bottom: 60px;
+    }
+
+    .race-hero__actions,
+    .race-final__actions {
+        flex-direction: column;
+    }
+
+    .race-hero__actions .btn,
+    .race-final__actions .btn {
+        width: 100%;
+    }
+
+    .race-hero__card {
+        min-height: 360px;
+        border-radius: 30px;
+    }
+
+    .race-hero__card img {
+        min-height: 360px;
+    }
+
+    .race-hero__note {
+        position: relative;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        margin: 14px;
+    }
+
+    .temperament-grid,
+    .needs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .need-card--large {
+        grid-column: auto;
+    }
+
+    .race-life__visual {
+        display: grid;
+        gap: 16px;
+        min-height: auto;
+    }
+
+    .life-picture {
+        position: relative;
+        inset: auto;
+        width: 100%;
+        height: 300px;
+        border-radius: 28px;
+        transform: none;
+    }
+
+    .race-beauty__card,
+    .race-final__card {
+        border-radius: 34px;
+    }
+}

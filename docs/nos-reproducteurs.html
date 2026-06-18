@@ -1,0 +1,999 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nos reproducteurs | Chatterie Berceau Étoilé</title>
+
+    <meta name="description" content="Découvrez les mâles et femelles reproducteurs de la Chatterie Berceau Étoilé, leurs origines, leurs robes et leur rôle dans la chatterie.">
+
+    <link rel="stylesheet" href="./assets/css/base/reset.css">
+    <link rel="stylesheet" href="./assets/css/base/variables.css">
+    <link rel="stylesheet" href="./assets/css/base/global.css">
+
+    <link rel="stylesheet" href="./assets/css/components/header.css">
+    <link rel="stylesheet" href="./assets/css/components/footer.css">
+    <link rel="stylesheet" href="./assets/css/components/buttons.css">
+    <link rel="stylesheet" href="./assets/css/components/cards.css">
+    <link rel="stylesheet" href="./assets/css/components/forms.css">
+
+        <link rel="stylesheet" href="./assets/css/pages/reproducteurs.css">
+</head>
+
+<body>
+<header class="site-header" data-header>
+    <div class="container site-header__inner">
+
+        <a href="http://127.0.0.1:8000" class="site-header__brand" aria-label="Retour à l'accueil">
+            <span class="site-header__logo">
+                <img src="./assets/images/logo/logo-berceau.png" alt="">
+            </span>
+
+            <span class="site-header__identity">
+                <strong>Berceau Étoilé</strong>
+                <small>Chatterie familiale de Ragdolls</small>
+            </span>
+        </a>
+
+        <nav class="site-header__nav" aria-label="Navigation principale">
+            <a href="http://127.0.0.1:8000" class="">
+                Accueil
+            </a>
+
+            <a href="./la-chatterie.html" class="">
+                La chatterie
+            </a>
+
+            <a href="./le-ragdoll.html" class="">
+                Le Ragdoll
+            </a>
+
+            <a href="./nos-reproducteurs.html" class="is-active">
+                Reproducteurs
+            </a>
+
+            <a href="./chatons.html" class="">
+                Chatons
+            </a>
+
+            <a href="./modalites-adoption.html" class="">
+                Adoption
+            </a>
+        </nav>
+
+        <div class="site-header__actions">
+            <a href="./contact.html" class="site-header__contact">
+                Me contacter
+            </a>
+
+            <button class="site-header__burger"
+                    type="button"
+                    aria-label="Ouvrir le menu"
+                    aria-expanded="false"
+                    data-menu-button>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="mobile-menu" data-mobile-menu>
+        <div class="container mobile-menu__inner">
+            <div class="mobile-menu__top">
+                <span>Menu</span>
+                <strong>✦ Berceau Étoilé</strong>
+            </div>
+
+            <nav class="mobile-menu__nav" aria-label="Navigation mobile">
+                <a href="http://127.0.0.1:8000">Accueil</a>
+                <a href="./la-chatterie.html">La chatterie</a>
+                <a href="./le-ragdoll.html">Le Ragdoll</a>
+                <a href="./couleurs-et-varietes.html">Couleurs & variétés</a>
+                <a href="./nos-reproducteurs.html">Nos reproducteurs</a>
+                <a href="./chatons.html">Chatons & portées</a>
+                <a href="./modalites-adoption.html">Modalités d’adoption</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+
+            <div class="mobile-menu__card">
+                <span>☾</span>
+                <p>
+                    Des Ragdolls élevés avec douceur, sérieux et beaucoup d’amour.
+                </p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    
+    
+    <section class="breeders-hero">
+        <div class="container breeders-hero__inner">
+            <div class="breeders-hero__content" data-animate>
+                <span class="section-kicker">Nos reproducteurs</span>
+
+                <h1>
+                    Les étoiles du Berceau, au cœur de nos futures portées.
+                </h1>
+
+                <p>
+                    Les reproducteurs de la Chatterie Berceau Étoilé sont choisis pour leur beauté,
+                    leur tempérament, leurs origines et leur douceur. Chacun apporte une histoire,
+                    une robe, une présence et une harmonie particulière à la chatterie.
+                </p>
+
+                <div class="breeders-hero__badges">
+                    <span>4 mâles</span>
+                    <span>12 femelles</span>
+                    <span>Origines internationales</span>
+                    <span>Ragdolls & Cherubim</span>
+                </div>
+            </div>
+
+            <div class="breeders-hero__visual" data-animate>
+                <div class="breeders-hero__card">
+                    <img src="./assets/images/reproducteurs/reproducteurs-hero.jpg" alt="Reproducteur Ragdoll de la chatterie">
+
+                    <div class="breeders-hero__note">
+                        <span>♡</span>
+                        <p>
+                            Chaque mariage est réfléchi avec attention pour préserver la douceur,
+                            l’équilibre, le type et la beauté des futures portées.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="breeders-intro">
+        <div class="container">
+            <div class="breeders-intro__card" data-animate>
+                <span class="breeders-intro__icon">✦</span>
+
+                <h2>Une sélection douce, exigeante et profondément familiale.</h2>
+
+                <p>
+                    Derrière chaque portée, il y a des reproducteurs aimés, observés et accompagnés.
+                    Leurs origines, leurs robes et leur tempérament participent à l’identité unique
+                    du Berceau Étoilé.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="breeders-collection breeders-collection--males">
+        <div class="container">
+            <div class="collection-heading" data-animate>
+                <div>
+                    <span class="section-kicker">Les mâles</span>
+                    <h2>Nos mâles reproducteurs</h2>
+                </div>
+
+                <p>
+                    Quatre mâles aux robes précieuses, issus de belles origines, chacun apportant
+                    sa présence, son caractère et son élégance aux lignées de la chatterie.
+                </p>
+            </div>
+
+            <div class="repro-showcase" data-repro-showcase data-animate>
+                <div class="repro-showcase__stage">
+                                            <article class="repro-panel is-active" data-repro-panel>
+                            <div class="repro-panel__image">
+                                <img src="./assets/images/reproducteurs/male-ragissa-nelson.jpg" alt="Ragissa Nelson">
+                                <span class="repro-panel__gender">Mâle</span>
+                            </div>
+
+                            <div class="repro-panel__content">
+                                <span class="repro-panel__origin">Pologne 🇵🇱</span>
+
+                                <h3>Ragissa Nelson</h3>
+
+                                <p>
+                                    Un reproducteur précieux de la chatterie, sélectionné pour son harmonie,
+                                    sa robe et la douceur qu’il apporte aux futures portées.
+                                </p>
+
+                                <div class="repro-panel__details">
+                                    <div>
+                                        <span>Robe</span>
+                                        <strong>Bleu bicolore</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>Rôle</span>
+                                        <strong>Reproducteur de la chatterie</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                                            <article class="repro-panel " data-repro-panel>
+                            <div class="repro-panel__image">
+                                <img src="./assets/images/reproducteurs/male-helios-of-babila.jpg" alt="Hélios of Babila">
+                                <span class="repro-panel__gender">Mâle</span>
+                            </div>
+
+                            <div class="repro-panel__content">
+                                <span class="repro-panel__origin">Pays-Bas 🇳🇱</span>
+
+                                <h3>Hélios of Babila</h3>
+
+                                <p>
+                                    Un reproducteur précieux de la chatterie, sélectionné pour son harmonie,
+                                    sa robe et la douceur qu’il apporte aux futures portées.
+                                </p>
+
+                                <div class="repro-panel__details">
+                                    <div>
+                                        <span>Robe</span>
+                                        <strong>Cinnamon tabby sépia mitted</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>Rôle</span>
+                                        <strong>Reproducteur de la chatterie</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                                            <article class="repro-panel " data-repro-panel>
+                            <div class="repro-panel__image">
+                                <img src="./assets/images/reproducteurs/male-wolf-du-berceau-etoile.jpg" alt="Wolf du Berceau Étoilé">
+                                <span class="repro-panel__gender">Mâle</span>
+                            </div>
+
+                            <div class="repro-panel__content">
+                                <span class="repro-panel__origin">Né à la chatterie 🏠</span>
+
+                                <h3>Wolf du Berceau Étoilé</h3>
+
+                                <p>
+                                    Un reproducteur précieux de la chatterie, sélectionné pour son harmonie,
+                                    sa robe et la douceur qu’il apporte aux futures portées.
+                                </p>
+
+                                <div class="repro-panel__details">
+                                    <div>
+                                        <span>Robe</span>
+                                        <strong>Lilas solide mitted</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>Rôle</span>
+                                        <strong>Reproducteur de la chatterie</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                                            <article class="repro-panel " data-repro-panel>
+                            <div class="repro-panel__image">
+                                <img src="./assets/images/reproducteurs/male-teddy-du-berceau-etoile.jpg" alt="Teddy du Berceau Étoilé">
+                                <span class="repro-panel__gender">Mâle</span>
+                            </div>
+
+                            <div class="repro-panel__content">
+                                <span class="repro-panel__origin">Né à la chatterie 🏠</span>
+
+                                <h3>Teddy du Berceau Étoilé</h3>
+
+                                <p>
+                                    Un reproducteur précieux de la chatterie, sélectionné pour son harmonie,
+                                    sa robe et la douceur qu’il apporte aux futures portées.
+                                </p>
+
+                                <div class="repro-panel__details">
+                                    <div>
+                                        <span>Robe</span>
+                                        <strong>Seal tabby bicolore</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>Rôle</span>
+                                        <strong>Reproducteur de la chatterie</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                                    </div>
+
+                <div class="repro-showcase__bottom">
+                    <button type="button" class="repro-showcase__arrow" data-repro-prev aria-label="Reproducteur précédent">
+                        ←
+                    </button>
+
+                    <div class="repro-thumbs">
+                                                    <button type="button"
+                                    class="repro-thumb is-active"
+                                    data-repro-thumb
+                                    data-index="0">
+                                <img src="./assets/images/reproducteurs/male-ragissa-nelson.jpg" alt="">
+                                <span>Ragissa Nelson</span>
+                            </button>
+                                                    <button type="button"
+                                    class="repro-thumb "
+                                    data-repro-thumb
+                                    data-index="1">
+                                <img src="./assets/images/reproducteurs/male-helios-of-babila.jpg" alt="">
+                                <span>Hélios of Babila</span>
+                            </button>
+                                                    <button type="button"
+                                    class="repro-thumb "
+                                    data-repro-thumb
+                                    data-index="2">
+                                <img src="./assets/images/reproducteurs/male-wolf-du-berceau-etoile.jpg" alt="">
+                                <span>Wolf du Berceau Étoilé</span>
+                            </button>
+                                                    <button type="button"
+                                    class="repro-thumb "
+                                    data-repro-thumb
+                                    data-index="3">
+                                <img src="./assets/images/reproducteurs/male-teddy-du-berceau-etoile.jpg" alt="">
+                                <span>Teddy du Berceau Étoilé</span>
+                            </button>
+                                            </div>
+
+                    <button type="button" class="repro-showcase__arrow" data-repro-next aria-label="Reproducteur suivant">
+                        →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="breeders-collection breeders-collection--females">
+        <div class="container">
+            <div class="collection-heading" data-animate>
+                <div>
+                    <span class="section-kicker">Les femelles</span>
+                    <h2>Nos femelles reproductrices</h2>
+                </div>
+
+                <p>
+                    Les femelles du Berceau Étoilé sont au cœur de la chatterie. Elles portent
+                    l’histoire des portées, la douceur du foyer et la transmission des futures générations.
+                </p>
+            </div>
+
+            <div class="females-highlight" data-animate>
+                <div class="females-highlight__content">
+                    <span>☾</span>
+
+                    <h3>Des mamans précieuses, chacune avec son histoire.</h3>
+
+                    <p>
+                        Certaines sont nées à la chatterie, d’autres viennent de Pologne, d’Autriche,
+                        des Pays-Bas, d’Allemagne, de France ou encore de lignées Russie / Chine.
+                        Cette diversité apporte une vraie richesse au programme d’élevage.
+                    </p>
+                </div>
+
+                <div class="females-highlight__stats">
+                    <div>
+                        <strong>12</strong>
+                        <span>femelles</span>
+                    </div>
+
+                    <div>
+                        <strong>7+</strong>
+                        <span>origines</span>
+                    </div>
+
+                    <div>
+                        <strong>∞</strong>
+                        <span>nuances</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="repro-showcase repro-showcase--females" data-repro-showcase data-animate>
+                <div class="repro-showcase__stage">
+                                            <article class="repro-panel is-active" data-repro-panel>
+                            <div class="repro-panel__image">
+                                <img src="./assets/images/reproducteurs/femelle-wonderful-cookie.jpg" alt="Wonderful Cookie du Berceau Étoilé">
+                                <span class="repro-panel__gender">Femelle</span>
+                            </div>
+
+                            <div class="repro-panel__content">
+                                <span class="repro-panel__origin">Née à la chatterie 🏠</span>
+
+                                <h3>Wonderful Cookie du Berceau Étoilé</h3>
+
+                                <p>
+                                    Une femelle précieuse du Berceau Étoilé, porteuse d’une histoire,
+                                    d’une robe et d’une douceur qui participent à l’identité de la chatterie.
+                                </p>
+
+                                <div class="repro-panel__details">
+                                    <div>
+                                        <span>Robe</span>
+                                        <strong>Chocolat tortie mink mitted</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>Rôle</span>
+                                        <strong>Femelle reproductrice</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                                            <article class="repro-panel " data-repro-panel>
+                            <div class="repro-panel__image">
+                                <img src="./assets/images/reproducteurs/femelle-moon-lune.jpg" alt="Moon Lune Precious Castle">
+                                <span class="repro-panel__gender">Femelle</span>
+                            </div>
+
+                            <div class="repro-panel__content">
+                                <span class="repro-panel__origin">Autriche 🇦🇹</span>
+
+                                <h3>Moon Lune Precious Castle</h3>
+
+                                <p>
+                                    Une femelle précieuse du Berceau Étoilé, porteuse d’une histoire,
+                                    d’une robe et d’une douceur qui participent à l’identité de la chatterie.
+                                </p>
+
+                                <div class="repro-panel__details">
+                                    <div>
+                                        <span>Robe</span>
+                                        <strong>Chocolat smoke bicolore solide</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>Rôle</span>
+                                        <strong>Femelle reproductrice</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                                            <article class="repro-panel " data-repro-panel>
+                            <div class="repro-panel__image">
+                                <img src="./assets/images/reproducteurs/femelle-selina-lazur-eyes.jpg" alt="Selina Lazur Eyes">
+                                <span class="repro-panel__gender">Femelle</span>
+                            </div>
+
+                            <div class="repro-panel__content">
+                                <span class="repro-panel__origin">Pologne 🇵🇱</span>
+
+                                <h3>Selina Lazur Eyes</h3>
+
+                                <p>
+                                    Une femelle précieuse du Berceau Étoilé, porteuse d’une histoire,
+                                    d’une robe et d’une douceur qui participent à l’identité de la chatterie.
+                                </p>
+
+                                <div class="repro-panel__details">
+                                    <div>
+                                        <span>Robe</span>
+                                        <strong>Seal tortie bicolore</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>Rôle</span>
+                                        <strong>Femelle reproductrice</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                                            <article class="repro-panel " data-repro-panel>
+                            <div class="repro-panel__image">
+                                <img src="./assets/images/reproducteurs/femelle-toffee-mona.jpg" alt="Toffee Mona Close To Nature">
+                                <span class="repro-panel__gender">Femelle</span>
+                            </div>
+
+                            <div class="repro-panel__content">
+                                <span class="repro-panel__origin">Pays-Bas 🇳🇱</span>
+
+                                <h3>Toffee Mona Close To Nature</h3>
+
+                                <p>
+                                    Une femelle précieuse du Berceau Étoilé, porteuse d’une histoire,
+                                    d’une robe et d’une douceur qui participent à l’identité de la chatterie.
+                                </p>
+
+                                <div class="repro-panel__details">
+                                    <div>
+                                        <span>Robe</span>
+                                        <strong>Chocolat tortie solide</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>Rôle</span>
+                                        <strong>Femelle reproductrice</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                                            <article class="repro-panel " data-repro-panel>
+                            <div class="repro-panel__image">
+                                <img src="./assets/images/reproducteurs/femelle-celeste-laser-touch.jpg" alt="Céleste Laser Touch">
+                                <span class="repro-panel__gender">Femelle</span>
+                            </div>
+
+                            <div class="repro-panel__content">
+                                <span class="repro-panel__origin">Allemagne 🇩🇪</span>
+
+                                <h3>Céleste Laser Touch</h3>
+
+                                <p>
+                                    Une femelle précieuse du Berceau Étoilé, porteuse d’une histoire,
+                                    d’une robe et d’une douceur qui participent à l’identité de la chatterie.
+                                </p>
+
+                                <div class="repro-panel__details">
+                                    <div>
+                                        <span>Robe</span>
+                                        <strong>Seal mink mitted</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>Rôle</span>
+                                        <strong>Femelle reproductrice</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                                            <article class="repro-panel " data-repro-panel>
+                            <div class="repro-panel__image">
+                                <img src="./assets/images/reproducteurs/femelle-luana.jpg" alt="Luana Close To Nature">
+                                <span class="repro-panel__gender">Femelle</span>
+                            </div>
+
+                            <div class="repro-panel__content">
+                                <span class="repro-panel__origin">Pays-Bas 🇳🇱</span>
+
+                                <h3>Luana Close To Nature</h3>
+
+                                <p>
+                                    Une femelle précieuse du Berceau Étoilé, porteuse d’une histoire,
+                                    d’une robe et d’une douceur qui participent à l’identité de la chatterie.
+                                </p>
+
+                                <div class="repro-panel__details">
+                                    <div>
+                                        <span>Robe</span>
+                                        <strong>Bleu tortie mink mitted</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>Rôle</span>
+                                        <strong>Femelle reproductrice</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                                            <article class="repro-panel " data-repro-panel>
+                            <div class="repro-panel__image">
+                                <img src="./assets/images/reproducteurs/femelle-morphee.jpg" alt="Morphée Precious Castle">
+                                <span class="repro-panel__gender">Femelle</span>
+                            </div>
+
+                            <div class="repro-panel__content">
+                                <span class="repro-panel__origin">Autriche 🇦🇹</span>
+
+                                <h3>Morphée Precious Castle</h3>
+
+                                <p>
+                                    Une femelle précieuse du Berceau Étoilé, porteuse d’une histoire,
+                                    d’une robe et d’une douceur qui participent à l’identité de la chatterie.
+                                </p>
+
+                                <div class="repro-panel__details">
+                                    <div>
+                                        <span>Robe</span>
+                                        <strong>Bleu solide mitted</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>Rôle</span>
+                                        <strong>Femelle reproductrice</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                                            <article class="repro-panel " data-repro-panel>
+                            <div class="repro-panel__image">
+                                <img src="./assets/images/reproducteurs/femelle-u-me.jpg" alt="U-Me des Rêves d’Anaïs">
+                                <span class="repro-panel__gender">Femelle</span>
+                            </div>
+
+                            <div class="repro-panel__content">
+                                <span class="repro-panel__origin">France 🇫🇷</span>
+
+                                <h3>U-Me des Rêves d’Anaïs</h3>
+
+                                <p>
+                                    Une femelle précieuse du Berceau Étoilé, porteuse d’une histoire,
+                                    d’une robe et d’une douceur qui participent à l’identité de la chatterie.
+                                </p>
+
+                                <div class="repro-panel__details">
+                                    <div>
+                                        <span>Robe</span>
+                                        <strong>Seal tortie tabby mink mitted</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>Rôle</span>
+                                        <strong>Femelle reproductrice</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                                            <article class="repro-panel " data-repro-panel>
+                            <div class="repro-panel__image">
+                                <img src="./assets/images/reproducteurs/femelle-cannelle-oana.jpg" alt="Cannelle Oana Precious Castle">
+                                <span class="repro-panel__gender">Femelle</span>
+                            </div>
+
+                            <div class="repro-panel__content">
+                                <span class="repro-panel__origin">Autriche 🇦🇹</span>
+
+                                <h3>Cannelle Oana Precious Castle</h3>
+
+                                <p>
+                                    Une femelle précieuse du Berceau Étoilé, porteuse d’une histoire,
+                                    d’une robe et d’une douceur qui participent à l’identité de la chatterie.
+                                </p>
+
+                                <div class="repro-panel__details">
+                                    <div>
+                                        <span>Robe</span>
+                                        <strong>Cinnamon smoke solide mitted</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>Rôle</span>
+                                        <strong>Femelle reproductrice</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                                            <article class="repro-panel " data-repro-panel>
+                            <div class="repro-panel__image">
+                                <img src="./assets/images/reproducteurs/femelle-astree.jpg" alt="Astrée du Berceau Étoilé">
+                                <span class="repro-panel__gender">Femelle</span>
+                            </div>
+
+                            <div class="repro-panel__content">
+                                <span class="repro-panel__origin">Née à la chatterie 🏠</span>
+
+                                <h3>Astrée du Berceau Étoilé</h3>
+
+                                <p>
+                                    Une femelle précieuse du Berceau Étoilé, porteuse d’une histoire,
+                                    d’une robe et d’une douceur qui participent à l’identité de la chatterie.
+                                </p>
+
+                                <div class="repro-panel__details">
+                                    <div>
+                                        <span>Robe</span>
+                                        <strong>Seal tortie mink mitted</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>Rôle</span>
+                                        <strong>Femelle reproductrice</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                                            <article class="repro-panel " data-repro-panel>
+                            <div class="repro-panel__image">
+                                <img src="./assets/images/reproducteurs/femelle-galya.jpg" alt="Galya Gungun Zoemuses">
+                                <span class="repro-panel__gender">Femelle</span>
+                            </div>
+
+                            <div class="repro-panel__content">
+                                <span class="repro-panel__origin">Russie 🇷🇺 / Chine 🇨🇳</span>
+
+                                <h3>Galya Gungun Zoemuses</h3>
+
+                                <p>
+                                    Une femelle précieuse du Berceau Étoilé, porteuse d’une histoire,
+                                    d’une robe et d’une douceur qui participent à l’identité de la chatterie.
+                                </p>
+
+                                <div class="repro-panel__details">
+                                    <div>
+                                        <span>Robe</span>
+                                        <strong>Seal tabby bicolore</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>Rôle</span>
+                                        <strong>Femelle reproductrice</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                                            <article class="repro-panel " data-repro-panel>
+                            <div class="repro-panel__image">
+                                <img src="./assets/images/reproducteurs/femelle-summer.jpg" alt="Summer Zoemuses">
+                                <span class="repro-panel__gender">Femelle</span>
+                            </div>
+
+                            <div class="repro-panel__content">
+                                <span class="repro-panel__origin">Russie 🇷🇺 / Chine 🇨🇳</span>
+
+                                <h3>Summer Zoemuses</h3>
+
+                                <p>
+                                    Une femelle précieuse du Berceau Étoilé, porteuse d’une histoire,
+                                    d’une robe et d’une douceur qui participent à l’identité de la chatterie.
+                                </p>
+
+                                <div class="repro-panel__details">
+                                    <div>
+                                        <span>Robe</span>
+                                        <strong>Bleu tabby bicolore</strong>
+                                    </div>
+
+                                    <div>
+                                        <span>Rôle</span>
+                                        <strong>Femelle reproductrice</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                                    </div>
+
+                <div class="repro-showcase__bottom">
+                    <button type="button" class="repro-showcase__arrow" data-repro-prev aria-label="Reproductrice précédente">
+                        ←
+                    </button>
+
+                    <div class="repro-thumbs">
+                                                    <button type="button"
+                                    class="repro-thumb is-active"
+                                    data-repro-thumb
+                                    data-index="0">
+                                <img src="./assets/images/reproducteurs/femelle-wonderful-cookie.jpg" alt="">
+                                <span>Wonderful Cookie du Berceau Étoilé</span>
+                            </button>
+                                                    <button type="button"
+                                    class="repro-thumb "
+                                    data-repro-thumb
+                                    data-index="1">
+                                <img src="./assets/images/reproducteurs/femelle-moon-lune.jpg" alt="">
+                                <span>Moon Lune Precious Castle</span>
+                            </button>
+                                                    <button type="button"
+                                    class="repro-thumb "
+                                    data-repro-thumb
+                                    data-index="2">
+                                <img src="./assets/images/reproducteurs/femelle-selina-lazur-eyes.jpg" alt="">
+                                <span>Selina Lazur Eyes</span>
+                            </button>
+                                                    <button type="button"
+                                    class="repro-thumb "
+                                    data-repro-thumb
+                                    data-index="3">
+                                <img src="./assets/images/reproducteurs/femelle-toffee-mona.jpg" alt="">
+                                <span>Toffee Mona Close To Nature</span>
+                            </button>
+                                                    <button type="button"
+                                    class="repro-thumb "
+                                    data-repro-thumb
+                                    data-index="4">
+                                <img src="./assets/images/reproducteurs/femelle-celeste-laser-touch.jpg" alt="">
+                                <span>Céleste Laser Touch</span>
+                            </button>
+                                                    <button type="button"
+                                    class="repro-thumb "
+                                    data-repro-thumb
+                                    data-index="5">
+                                <img src="./assets/images/reproducteurs/femelle-luana.jpg" alt="">
+                                <span>Luana Close To Nature</span>
+                            </button>
+                                                    <button type="button"
+                                    class="repro-thumb "
+                                    data-repro-thumb
+                                    data-index="6">
+                                <img src="./assets/images/reproducteurs/femelle-morphee.jpg" alt="">
+                                <span>Morphée Precious Castle</span>
+                            </button>
+                                                    <button type="button"
+                                    class="repro-thumb "
+                                    data-repro-thumb
+                                    data-index="7">
+                                <img src="./assets/images/reproducteurs/femelle-u-me.jpg" alt="">
+                                <span>U-Me des Rêves d’Anaïs</span>
+                            </button>
+                                                    <button type="button"
+                                    class="repro-thumb "
+                                    data-repro-thumb
+                                    data-index="8">
+                                <img src="./assets/images/reproducteurs/femelle-cannelle-oana.jpg" alt="">
+                                <span>Cannelle Oana Precious Castle</span>
+                            </button>
+                                                    <button type="button"
+                                    class="repro-thumb "
+                                    data-repro-thumb
+                                    data-index="9">
+                                <img src="./assets/images/reproducteurs/femelle-astree.jpg" alt="">
+                                <span>Astrée du Berceau Étoilé</span>
+                            </button>
+                                                    <button type="button"
+                                    class="repro-thumb "
+                                    data-repro-thumb
+                                    data-index="10">
+                                <img src="./assets/images/reproducteurs/femelle-galya.jpg" alt="">
+                                <span>Galya Gungun Zoemuses</span>
+                            </button>
+                                                    <button type="button"
+                                    class="repro-thumb "
+                                    data-repro-thumb
+                                    data-index="11">
+                                <img src="./assets/images/reproducteurs/femelle-summer.jpg" alt="">
+                                <span>Summer Zoemuses</span>
+                            </button>
+                                            </div>
+
+                    <button type="button" class="repro-showcase__arrow" data-repro-next aria-label="Reproductrice suivante">
+                        →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="health-section">
+        <div class="container health-section__inner">
+            <div class="health-section__content" data-animate>
+                <span class="section-kicker">Santé & mariages</span>
+
+                <h2>Des mariages réfléchis, pensés avec douceur et responsabilité.</h2>
+
+                <p>
+                    Les reproducteurs ne sont pas seulement choisis pour leur robe.
+                    Leur tempérament, leur équilibre, leurs origines, leur évolution et leur compatibilité
+                    sont essentiels dans la préparation des portées.
+                </p>
+
+                <div class="health-list">
+                    <div>
+                        <strong>Origines sélectionnées</strong>
+                        <span>Des lignées venues de plusieurs pays, choisies avec attention.</span>
+                    </div>
+
+                    <div>
+                        <strong>Robes travaillées</strong>
+                        <span>Seal, bleu, chocolat, lilas, cinnamon, mink, sépia, solide, tabby ou tortie.</span>
+                    </div>
+
+                    <div>
+                        <strong>Bien-être quotidien</strong>
+                        <span>Des reproducteurs intégrés dans un environnement familial, doux et respectueux.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="health-section__visual" data-animate>
+                <div class="health-card">
+                    <span>✦</span>
+
+                    <h3>Un programme d’élevage harmonieux</h3>
+
+                    <p>
+                        L’objectif est de faire naître des chatons beaux, équilibrés,
+                        bien socialisés et adaptés à leur future vie de famille.
+                    </p>
+                </div>
+
+                <div class="health-picture">
+                    <img src="./assets/images/reproducteurs/health.jpg" alt="Ragdoll de la Chatterie Berceau Étoilé">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="breeders-final">
+        <div class="container">
+            <div class="breeders-final__card" data-animate>
+                <span class="breeders-final__icon">♡</span>
+
+                <h2>Chaque reproducteur apporte une étoile à l’histoire de la chatterie.</h2>
+
+                <p>
+                    Pour découvrir les chatons disponibles, les futures portées ou échanger sur un projet d’adoption,
+                    vous pouvez poursuivre la visite du site ou contacter directement la chatterie.
+                </p>
+
+                <div class="breeders-final__actions">
+                    <a href="./chatons.html" class="btn btn-primary">
+                        Voir les chatons
+                    </a>
+
+                    <a href="./contact.html" class="btn btn-secondary">
+                        Contacter la chatterie
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="site-footer__cloud site-footer__cloud--one"></div>
+    <div class="site-footer__cloud site-footer__cloud--two"></div>
+
+    <div class="container site-footer__inner">
+        <div class="site-footer__brand">
+            <a href="http://127.0.0.1:8000" class="site-footer__logo">
+                <span>
+                    <img src="./assets/images/logo/logo-berceau.png" alt="">
+                </span>
+                <strong>Berceau Étoilé</strong>
+            </a>
+
+            <p>
+                Chatterie familiale de Ragdolls, pensée autour du bien-être, de la douceur,
+                de la socialisation et de l’accompagnement des familles.
+            </p>
+
+            <div class="site-footer__badges">
+                <span>Élevage familial</span>
+                <span>Ragdolls</span>
+                <span>Avec amour</span>
+            </div>
+        </div>
+
+        <div class="site-footer__links">
+            <div>
+                <h3>Découvrir</h3>
+
+                <a href="./la-chatterie.html">La chatterie</a>
+                <a href="./le-ragdoll.html">Le Ragdoll</a>
+                <a href="./couleurs-et-varietes.html">Couleurs & variétés</a>
+            </div>
+
+            <div>
+                <h3>Adoption</h3>
+
+                <a href="./nos-reproducteurs.html">Nos reproducteurs</a>
+                <a href="./chatons.html">Chatons & portées</a>
+                <a href="./modalites-adoption.html">Modalités d’adoption</a>
+                <a href="./contact.html">Nous contacter</a>
+            </div>
+        </div>
+
+        <div class="site-footer__contact">
+            <h3>Une question ?</h3>
+
+            <p>
+                Pour une demande d’adoption, une inscription sur liste d’attente ou une question
+                sur la chatterie, vous pouvez nous écrire directement.
+            </p>
+
+            <a href="./contact.html" class="btn btn-primary">
+                Contacter la chatterie
+            </a>
+        </div>
+    </div>
+
+    <div class="container site-footer__bottom">
+        <p>
+            © 2026 Chatterie Berceau Étoilé. Tous droits réservés.
+        </p>
+
+        <div>
+            <a href="#">Mentions légales</a>
+            <span>•</span>
+            <a href="#">Confidentialité</a>
+        </div>
+    </div>
+</footer>
+
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/components/header.js"></script>
+<script src="./assets/js/components/animations.js"></script>
+
+    <script src="./assets/js/pages/reproducteurs.js"></script>
+</body>
+</html>
+

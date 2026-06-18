@@ -1,0 +1,36 @@
+:root {
+    --be-bg: #fff7fb;
+    --be-bg-soft: #f8ecff;
+    --be-bg-lavender: #efe0ff;
+
+    --be-white: #ffffff;
+    --be-cream: #fff1d8;
+
+    --be-pink: #f5b8cf;
+    --be-pink-soft: #ffe3ee;
+
+    --be-lavender: #c9a7dd;
+    --be-lavender-soft: #ead8f7;
+    --be-lavender-dark: #8762a0;
+
+    --be-gold: #f2cc7f;
+    --be-gold-soft: #fff0c9;
+
+    --be-text: #59445f;
+    --be-muted: #9b7fa0;
+
+    --be-border: rgba(135, 98, 160, 0.18);
+
+    --be-shadow-soft: 0 18px 45px rgba(135, 98, 160, 0.14);
+    --be-shadow-card: 0 24px 70px rgba(135, 98, 160, 0.18);
+
+    --be-radius-sm: 14px;
+    --be-radius-md: 20px;
+    --be-radius-lg: 30px;
+    --be-radius-xl: 40px;
+
+    --be-container: 1180px;
+
+    --font-title: Georgia, 'Times New Roman', serif;
+    --font-body: Arial, sans-serif;
+}

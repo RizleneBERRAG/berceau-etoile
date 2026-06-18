@@ -1,0 +1,27 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 22px;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 800;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--be-pink), var(--be-lavender));
+    color: var(--be-white);
+    box-shadow: 0 14px 30px rgba(201, 167, 221, 0.35);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.72);
+    color: var(--be-lavender-dark);
+    border: 1px solid var(--be-border);
+}

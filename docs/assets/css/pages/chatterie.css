@@ -1,0 +1,368 @@
+.chatterie-hero {
+    padding: 72px 0 56px;
+}
+
+.chatterie-hero__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 0.92fr);
+    gap: 42px;
+    align-items: center;
+}
+
+.chatterie-hero__content h1 {
+    margin-top: 18px;
+    max-width: 760px;
+    font-family: var(--font-title);
+    font-size: clamp(2.8rem, 5.6vw, 5.7rem);
+    line-height: 0.92;
+    letter-spacing: -0.06em;
+    color: var(--be-text);
+}
+
+.chatterie-hero__content p {
+    max-width: 640px;
+    margin-top: 22px;
+    color: var(--be-muted);
+    font-size: 1.04rem;
+    line-height: 1.85;
+}
+
+.chatterie-hero__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 28px;
+}
+
+.chatterie-hero__badges span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 42px;
+    padding: 0 16px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(135, 98, 160, 0.12);
+    color: var(--be-lavender-dark);
+    font-weight: 800;
+}
+
+.chatterie-hero__card {
+    overflow: hidden;
+    border-radius: 42px;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.84);
+    box-shadow: var(--be-shadow-card);
+}
+
+.chatterie-hero__card img {
+    width: 100%;
+    height: 100%;
+    min-height: 520px;
+    object-fit: cover;
+}
+
+.chatterie-story {
+    padding: 44px 0 82px;
+}
+
+.chatterie-story__inner {
+    display: grid;
+    grid-template-columns: minmax(320px, 0.92fr) minmax(0, 1.08fr);
+    gap: 42px;
+    align-items: center;
+}
+
+.chatterie-story__media {
+    overflow: hidden;
+    border-radius: 38px;
+    box-shadow: var(--be-shadow-card);
+}
+
+.chatterie-story__media img {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    object-fit: cover;
+}
+
+.chatterie-story__content h2,
+.section-heading h2,
+.chatterie-care__content h2,
+.chatterie-final__card h2 {
+    margin-top: 18px;
+    font-family: var(--font-title);
+    font-size: clamp(2.2rem, 4.8vw, 4.6rem);
+    line-height: 0.96;
+    letter-spacing: -0.055em;
+    color: var(--be-text);
+}
+
+.chatterie-story__content p,
+.section-heading p,
+.chatterie-care__content > p,
+.chatterie-final__card p {
+    margin-top: 18px;
+    color: var(--be-muted);
+    line-height: 1.85;
+    font-size: 1.02rem;
+}
+
+.chatterie-values {
+    padding: 0 0 86px;
+}
+
+.section-heading {
+    max-width: 780px;
+    margin-bottom: 36px;
+}
+
+.section-heading--center {
+    margin-inline: auto;
+    text-align: center;
+}
+
+.chatterie-values__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.value-card {
+    padding: 28px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.86);
+    box-shadow: var(--be-shadow-soft);
+}
+
+.value-card span {
+    display: inline-flex;
+    width: 52px;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background: var(--be-pink-soft);
+    color: var(--be-lavender-dark);
+    font-size: 1.3rem;
+}
+
+.value-card h3 {
+    margin-bottom: 10px;
+    font-family: var(--font-title);
+    font-size: 1.7rem;
+    letter-spacing: -0.04em;
+    color: var(--be-text);
+}
+
+.value-card p {
+    color: var(--be-muted);
+    line-height: 1.75;
+}
+
+.chatterie-spaces {
+    padding: 0 0 86px;
+}
+
+.chatterie-spaces__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+    gap: 22px;
+}
+
+.space-card {
+    padding: 30px;
+    border-radius: 34px;
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.86);
+    box-shadow: var(--be-shadow-soft);
+}
+
+.space-card h3 {
+    margin-bottom: 12px;
+    font-family: var(--font-title);
+    font-size: 1.9rem;
+    letter-spacing: -0.04em;
+    color: var(--be-text);
+}
+
+.space-card p {
+    color: var(--be-muted);
+    line-height: 1.8;
+}
+
+.space-card--large {
+    grid-row: span 2;
+    padding: 0;
+    overflow: hidden;
+}
+
+.space-card__image img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
+.space-card__content {
+    padding: 30px;
+}
+
+.chatterie-care {
+    padding: 0 0 86px;
+}
+
+.chatterie-care__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1.02fr) minmax(340px, 0.98fr);
+    gap: 40px;
+    align-items: center;
+}
+
+.care-list {
+    display: grid;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.care-list div {
+    padding: 18px 20px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.68);
+    border: 1px solid rgba(135, 98, 160, 0.12);
+}
+
+.care-list strong {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--be-text);
+    font-family: var(--font-title);
+    font-size: 1.22rem;
+}
+
+.care-list p {
+    color: var(--be-muted);
+    line-height: 1.7;
+}
+
+.care-visual-card {
+    overflow: hidden;
+    border-radius: 38px;
+    box-shadow: var(--be-shadow-card);
+}
+
+.care-visual-card img {
+    width: 100%;
+    height: 100%;
+    min-height: 520px;
+    object-fit: cover;
+}
+
+.chatterie-final {
+    padding: 0 0 24px;
+}
+
+.chatterie-final__card {
+    padding: clamp(32px, 5vw, 56px);
+    text-align: center;
+    border-radius: 42px;
+    background:
+        radial-gradient(circle at 20% 18%, rgba(255,255,255,0.85), transparent 26%),
+        linear-gradient(135deg, rgba(255, 227, 238, 0.78), rgba(248, 236, 255, 0.9));
+    border: 1px solid rgba(255, 255, 255, 0.88);
+    box-shadow: var(--be-shadow-card);
+}
+
+.chatterie-final__icon {
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.76);
+    color: var(--be-gold);
+    font-size: 1.8rem;
+}
+
+.chatterie-final__card h2 {
+    max-width: 860px;
+    margin-inline: auto;
+}
+
+.chatterie-final__card p {
+    max-width: 760px;
+    margin-inline: auto;
+}
+
+.chatterie-final__actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+[data-animate] {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+[data-animate].is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 1100px) {
+    .chatterie-hero__inner,
+    .chatterie-story__inner,
+    .chatterie-care__inner,
+    .chatterie-spaces__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chatterie-values__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .space-card--large {
+        grid-row: auto;
+    }
+}
+
+@media (max-width: 760px) {
+    .chatterie-hero,
+    .chatterie-story,
+    .chatterie-values,
+    .chatterie-spaces,
+    .chatterie-care {
+        padding-bottom: 60px;
+    }
+
+    .chatterie-values__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chatterie-hero__card,
+    .chatterie-story__media,
+    .care-visual-card,
+    .chatterie-final__card {
+        border-radius: 28px;
+    }
+
+    .chatterie-hero__card img,
+    .chatterie-story__media img,
+    .care-visual-card img {
+        min-height: 320px;
+    }
+
+    .chatterie-final__actions {
+        flex-direction: column;
+    }
+
+    .chatterie-final__actions .btn {
+        width: 100%;
+    }
+}
