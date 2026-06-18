@@ -25,3 +25,5 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('chatons', AdminKittenController::class)
         ->parameters(['chatons' => 'kitten']);
 });
+Route::view('/mentions-legales', 'pages.mentions-legales')->name('mentions');
+Route::view('/confidentialite', 'pages.confidentialite')->name('confidentialite');

@@ -1,0 +1,118 @@
+.legal-hero {
+    position: relative;
+    padding: 76px 0 64px;
+    overflow: hidden;
+}
+
+.legal-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 12% 16%, rgba(245, 184, 207, 0.3), transparent 30%),
+        radial-gradient(circle at 88% 20%, rgba(201, 167, 221, 0.28), transparent 32%);
+    pointer-events: none;
+}
+
+.legal-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.legal-hero h1 {
+    max-width: 900px;
+    margin-top: 18px;
+    font-family: var(--font-title);
+    font-size: clamp(2.8rem, 5.8vw, 5.9rem);
+    line-height: 0.9;
+    letter-spacing: -0.065em;
+    color: var(--be-text);
+}
+
+.legal-hero p {
+    max-width: 680px;
+    margin-top: 24px;
+    color: var(--be-muted);
+    font-size: 1.05rem;
+    line-height: 1.85;
+}
+
+.legal-content {
+    padding: 0 0 80px;
+}
+
+.legal-card {
+    display: grid;
+    gap: 18px;
+    padding: clamp(26px, 4vw, 46px);
+    border-radius: 42px;
+    background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.9), transparent 30%),
+        linear-gradient(135deg, rgba(255, 227, 238, 0.62), rgba(248, 236, 255, 0.9));
+    border: 1px solid rgba(255, 255, 255, 0.88);
+    box-shadow: var(--be-shadow-card);
+}
+
+.legal-card article {
+    padding: 24px;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.68);
+    border: 1px solid rgba(135, 98, 160, 0.1);
+}
+
+.legal-card h2 {
+    margin-bottom: 12px;
+    font-family: var(--font-title);
+    font-size: clamp(1.7rem, 3vw, 2.5rem);
+    line-height: 1;
+    letter-spacing: -0.045em;
+    color: var(--be-text);
+}
+
+.legal-card p {
+    color: var(--be-muted);
+    line-height: 1.8;
+}
+
+.legal-card strong {
+    color: var(--be-text);
+}
+
+@media (max-width: 760px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .legal-hero {
+        padding: 34px 0 50px;
+    }
+
+    .legal-hero h1 {
+        font-size: clamp(2rem, 12vw, 3rem);
+        line-height: 0.96;
+        letter-spacing: -0.045em;
+        overflow-wrap: break-word;
+    }
+
+    .legal-hero p {
+        margin-top: 18px;
+        font-size: 0.96rem;
+        line-height: 1.72;
+    }
+
+    .legal-content {
+        padding-bottom: 60px;
+    }
+
+    .legal-card {
+        gap: 14px;
+        padding: 18px;
+        border-radius: 30px;
+    }
+
+    .legal-card article {
+        padding: 20px;
+        border-radius: 24px;
+    }
+}

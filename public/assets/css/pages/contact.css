@@ -535,11 +535,20 @@
    RESPONSIVE
 ========================= */
 
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (max-width: 1120px) {
     .contact-hero__inner,
     .contact-main__inner,
     .google-reviews__top {
         grid-template-columns: 1fr;
+    }
+
+    .contact-hero__content,
+    .contact-hero__visual {
+        min-width: 0;
     }
 
     .reviews-grid {
@@ -548,32 +557,79 @@
 }
 
 @media (max-width: 760px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
     .contact-hero {
-        padding: 44px 0 52px;
+        padding: 34px 0 50px;
+    }
+
+    .contact-hero__inner {
+        gap: 24px;
+    }
+
+    .contact-hero__content {
+        max-width: 100%;
+        min-width: 0;
     }
 
     .contact-hero__content h1 {
-        font-size: clamp(2.05rem, 11vw, 3rem);
-        line-height: 0.98;
-        letter-spacing: -0.04em;
+        max-width: 100%;
+        margin-top: 16px;
+        font-size: clamp(2rem, 12vw, 3rem);
+        line-height: 0.95;
+        letter-spacing: -0.045em;
+        overflow-wrap: break-word;
     }
 
     .contact-hero__content p {
-        font-size: 0.98rem;
-        line-height: 1.78;
+        max-width: 100%;
+        margin-top: 18px;
+        font-size: 0.96rem;
+        line-height: 1.72;
     }
 
     .contact-hero__badges {
         gap: 8px;
+        margin-top: 22px;
     }
 
     .contact-hero__badges span {
-        min-height: 38px;
-        padding: 0 13px;
-        font-size: 0.82rem;
+        min-height: 36px;
+        padding: 0 12px;
+        font-size: 0.76rem;
+        white-space: normal;
     }
 
-    .contact-hero__card,
+    .contact-hero__card {
+        padding: 26px 20px;
+        border-radius: 30px;
+    }
+
+    .contact-hero__card > span {
+        width: 52px;
+        height: 52px;
+        margin-bottom: 18px;
+        border-radius: 20px;
+    }
+
+    .contact-hero__card h2 {
+        font-size: clamp(1.9rem, 9vw, 2.7rem);
+        line-height: 0.98;
+    }
+
+    .contact-main,
+    .contact-map-section,
+    .google-reviews {
+        padding-bottom: 60px;
+    }
+
+    .contact-main__inner {
+        gap: 18px;
+    }
+
     .contact-form-card,
     .contact-info__card,
     .contact-info__soft,
@@ -583,18 +639,29 @@
         border-radius: 30px;
     }
 
-    .contact-main,
-    .contact-map-section,
-    .google-reviews {
-        padding-bottom: 60px;
-    }
-
     .contact-form-card {
-        padding: 28px 22px;
+        padding: 28px 20px;
     }
 
     .contact-form__grid {
         grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .contact-form {
+        gap: 14px;
+    }
+
+    .contact-consent {
+        padding: 14px;
+        border-radius: 18px;
+        font-size: 0.9rem;
+    }
+
+    .contact-info__card,
+    .contact-info__soft,
+    .review-card {
+        padding: 22px 20px;
     }
 
     .section-heading {
@@ -605,7 +672,7 @@
     .contact-form-card h2,
     .google-reviews__top h2,
     .contact-final__card h2 {
-        font-size: clamp(2.05rem, 10vw, 3.1rem);
+        font-size: clamp(2.05rem, 10vw, 3rem);
         line-height: 0.98;
         letter-spacing: -0.045em;
     }
@@ -614,8 +681,8 @@
     .contact-form-card > p,
     .google-reviews__top p,
     .contact-final__card p {
-        font-size: 0.97rem;
-        line-height: 1.75;
+        font-size: 0.96rem;
+        line-height: 1.72;
     }
 
     .map-card,
@@ -629,6 +696,12 @@
         right: 14px;
         bottom: 14px;
         max-width: none;
+        padding: 14px;
+        border-radius: 22px;
+    }
+
+    .google-reviews__top {
+        gap: 18px;
     }
 
     .google-reviews__button {
@@ -637,6 +710,7 @@
 
     .google-note {
         flex-direction: column;
+        padding: 16px;
     }
 
     .contact-final__card {
@@ -649,5 +723,40 @@
 
     .contact-final__actions .btn {
         width: 100%;
+    }
+}
+
+@media (max-width: 430px) {
+    .contact-hero {
+        padding-top: 28px;
+    }
+
+    .contact-hero__content h1 {
+        font-size: clamp(1.85rem, 11vw, 2.55rem);
+        line-height: 0.96;
+        letter-spacing: -0.04em;
+    }
+
+    .contact-hero__content p {
+        font-size: 0.92rem;
+    }
+
+    .contact-hero__badges span {
+        font-size: 0.72rem;
+        padding: 0 11px;
+    }
+
+    .contact-hero__card,
+    .contact-form-card,
+    .contact-info__card,
+    .contact-info__soft,
+    .review-card {
+        padding-inline: 18px;
+    }
+
+    .map-card,
+    .map-card iframe {
+        min-height: 320px;
+        height: 320px;
     }
 }

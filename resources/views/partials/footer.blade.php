@@ -62,9 +62,8 @@
         </p>
 
         <div>
-            <a href="#">Mentions légales</a>
-            <span>•</span>
-            <a href="#">Confidentialité</a>
+            <a href="{{ route('mentions') }}">Mentions légales</a>
+            <a href="{{ route('confidentialite') }}">Confidentialité</a>
         </div>
     </div>
 </footer>
