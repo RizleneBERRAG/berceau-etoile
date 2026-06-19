@@ -54,31 +54,31 @@
             </button>
         </div>
     </div>
+</header>
 
-    <div class="mobile-menu" data-mobile-menu>
-        <div class="container mobile-menu__inner">
-            <div class="mobile-menu__top">
-                <span>Menu</span>
-                <strong>✦ Berceau Étoilé</strong>
-            </div>
+<div class="mobile-menu" data-mobile-menu>
+    <div class="mobile-menu__panel">
+        <div class="mobile-menu__top">
+            <span>Menu</span>
+            <strong>✦ Berceau Étoilé</strong>
+        </div>
 
-            <nav class="mobile-menu__nav" aria-label="Navigation mobile">
-                <a href="{{ route('home') }}">Accueil</a>
-                <a href="{{ route('chatterie') }}">La chatterie</a>
-                <a href="{{ route('race') }}">Le Ragdoll</a>
-                <a href="{{ route('varietes') }}">Couleurs & variétés</a>
-                <a href="{{ route('reproducteurs') }}">Nos reproducteurs</a>
-                <a href="{{ route('chatons') }}">Chatons & portées</a>
-                <a href="{{ route('adoption') }}">Modalités d’adoption</a>
-                <a href="{{ route('contact') }}">Contact</a>
-            </nav>
+        <nav class="mobile-menu__nav" aria-label="Navigation mobile">
+            <a href="{{ route('home') }}">Accueil</a>
+            <a href="{{ route('chatterie') }}">La chatterie</a>
+            <a href="{{ route('race') }}">Le Ragdoll</a>
+            <a href="{{ route('varietes') }}">Couleurs & variétés</a>
+            <a href="{{ route('reproducteurs') }}">Nos reproducteurs</a>
+            <a href="{{ route('chatons') }}">Chatons & portées</a>
+            <a href="{{ route('adoption') }}">Modalités d’adoption</a>
+            <a href="{{ route('contact') }}">Contact</a>
+        </nav>
 
-            <div class="mobile-menu__card">
-                <span>☾</span>
-                <p>
-                    Des Ragdolls élevés avec douceur, sérieux et beaucoup d’amour.
-                </p>
-            </div>
+        <div class="mobile-menu__card">
+            <span>☾</span>
+            <p>
+                Des Ragdolls élevés avec douceur, sérieux et beaucoup d’amour.
+            </p>
         </div>
     </div>
-</header>
+</div>

@@ -975,3 +975,245 @@
         width: 100%;
     }
 }
+
+
+/* =========================================================
+   FIX MOBILE HERO — BERCEAU ÉTOILÉ
+   À mettre tout en bas de home.css
+========================================================= */
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img,
+video,
+svg {
+    max-width: 100%;
+}
+
+/* Sécurité globale accueil */
+.home-hero,
+.hero,
+.hero-section,
+section:first-of-type {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.home-hero .container,
+.hero .container,
+.hero-section .container,
+section:first-of-type .container {
+    max-width: 100%;
+    min-width: 0;
+}
+
+/* Évite que les blocs forcent la largeur */
+.home-hero *,
+.hero *,
+.hero-section *,
+section:first-of-type * {
+    min-width: 0;
+}
+
+/* Badge haut */
+.home-hero__eyebrow,
+.hero__eyebrow,
+.hero-eyebrow,
+.section-eyebrow,
+.eyebrow {
+    max-width: 100%;
+    width: fit-content;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+/* Titre */
+.home-hero h1,
+.hero h1,
+.hero-section h1,
+section:first-of-type h1 {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+/* Texte */
+.home-hero p,
+.hero p,
+.hero-section p,
+section:first-of-type p {
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+/* Boutons */
+.home-hero__actions,
+.hero__actions,
+.hero-actions,
+.actions {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-hero__actions a,
+.hero__actions a,
+.hero-actions a,
+.actions a {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 620px) {
+    .home-hero,
+    .hero,
+    .hero-section,
+    section:first-of-type {
+        padding-top: 44px;
+        padding-bottom: 42px;
+    }
+
+    .home-hero .container,
+    .hero .container,
+    .hero-section .container,
+    section:first-of-type .container {
+        width: calc(100% - 32px);
+        max-width: calc(100% - 32px);
+        margin-inline: auto;
+        padding-inline: 0;
+    }
+
+    .home-hero__grid,
+    .hero__grid,
+    .hero-grid,
+    .home-hero__inner,
+    .hero__inner {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 28px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .home-hero__content,
+    .hero__content,
+    .hero-content,
+    .home-hero__text,
+    .hero__text {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .home-hero__eyebrow,
+    .hero__eyebrow,
+    .hero-eyebrow,
+    .section-eyebrow,
+    .eyebrow {
+        max-width: 100%;
+        padding: 10px 14px;
+        font-size: 0.7rem;
+        line-height: 1.3;
+        letter-spacing: 0.05em;
+    }
+
+    .home-hero h1,
+    .hero h1,
+    .hero-section h1,
+    section:first-of-type h1 {
+        font-size: clamp(2.05rem, 10.5vw, 2.8rem);
+        line-height: 1;
+        letter-spacing: -0.055em;
+        max-width: 100%;
+    }
+
+    .home-hero p,
+    .hero p,
+    .hero-section p,
+    section:first-of-type p {
+        font-size: 0.96rem;
+        line-height: 1.75;
+        max-width: 100%;
+    }
+
+    .home-hero__actions,
+    .hero__actions,
+    .hero-actions,
+    .actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .home-hero__actions a,
+    .hero__actions a,
+    .hero-actions a,
+    .actions a {
+        width: 100%;
+        min-height: 48px;
+        justify-content: center;
+        padding-inline: 18px;
+    }
+
+    .home-hero__stats,
+    .hero__stats,
+    .hero-stats,
+    .stats {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Très petits écrans */
+@media (max-width: 380px) {
+    .home-hero .container,
+    .hero .container,
+    .hero-section .container,
+    section:first-of-type .container {
+        width: calc(100% - 24px);
+        max-width: calc(100% - 24px);
+    }
+
+    .home-hero h1,
+    .hero h1,
+    .hero-section h1,
+    section:first-of-type h1 {
+        font-size: clamp(1.85rem, 10vw, 2.4rem);
+        line-height: 1.02;
+    }
+
+    .home-hero p,
+    .hero p,
+    .hero-section p,
+    section:first-of-type p {
+        font-size: 0.9rem;
+        line-height: 1.65;
+    }
+
+    .home-hero__eyebrow,
+    .hero__eyebrow,
+    .hero-eyebrow,
+    .section-eyebrow,
+    .eyebrow {
+        font-size: 0.64rem;
+        padding: 9px 12px;
+    }
+}
